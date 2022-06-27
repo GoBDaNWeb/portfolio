@@ -1,19 +1,23 @@
 import React, {useState} from 'react'
 import AppContext from './AppContext'
 
-const CartProvider = (props) => {
+const AppProvider = (props) => {
 
-    const [isOpenModal, handleIsOpenModal] = useState(false)
+    const [isOpenContactsModal, handleIsOpenContactsModal] = useState(false)
+    const [isOpenMobileMenu, handleIsOpenMobileMenu] = useState(false)
 
-    const handleModal = () => {
-        handleIsOpenModal(!isOpenModal)
+    const handleContactsModal = () => {
+        handleIsOpenContactsModal(!isOpenContactsModal)
+    }
+    const handleMobileMenu = () => {
+        handleIsOpenMobileMenu(!isOpenMobileMenu)
     }
 
     return (
-        <AppContext.Provider value={{handleModal, isOpenModal}}>
+        <AppContext.Provider value={{handleContactsModal, handleMobileMenu, isOpenContactsModal, isOpenMobileMenu}}>
             {props.children}
         </AppContext.Provider>
     )
 }
 
-export default CartProvider
+export default AppProvider

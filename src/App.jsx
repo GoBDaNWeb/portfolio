@@ -1,5 +1,6 @@
 import Header from './components/Header'
-import Modal from './components/Modal'
+import ContactsModal from './components/ContactsModal'
+import MobileMenu from './components/MobileMenu'
 import Main from './pages/Main'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
@@ -27,11 +28,13 @@ function App() {
  
 	return (
 		<>
-			<div className="bg-zinc-800 h-screen text-white">
+			<div className="bg-zinc-800 min-h-screen text-white">
+				<MobileMenu/>
 				<Header/>
 				{
-					ctx.isOpenModal 
-					&& <Modal/>
+					ctx.isOpenContactsModal 
+					&& 
+					<ContactsModal/>
 				}
 				<div className='flex px-28 h-full w-full relative'>
 					{

@@ -2,21 +2,19 @@ import React, {useContext} from 'react'
 import {FaTelegramPlane, FaVk} from 'react-icons/fa'
 import AppContext from '../context/AppContext'
 import {AiFillPhone, AiFillMail, AiOutlineClose} from 'react-icons/ai'
+import Backdrop from './Backdrop'
 
-export default function Modal() {
+export default function ContactsModal() {
     const ctx = useContext(AppContext)
     console.log(ctx);
     return (
-        <div 
-            onClick={() => ctx.handleModal()}
-            className='fixed flex justify-center items-center z-50 bg-black bg-opacity-50 w-full h-full'
-        >
-            <div 
+        <Backdrop closeModal={() => ctx.handleContactsModal()}>
+             <div 
                 onClick={e => e.stopPropagation()} 
                 className='bg-zinc-700 w-96 rounded-2xl p-4 flex flex-col justify-center relative'
             >  
                 <div 
-                    onClick={() => ctx.handleModal()}
+                    onClick={() => ctx.handleContactsModal()}
                     className='absolute flex items-center justify-center text-xl text-white right-[-10px] top-[-10px] w-10 h-10 bg-zinc-800 rounded-full cursor-pointer'
                 >
                     <AiOutlineClose/>
@@ -54,6 +52,6 @@ export default function Modal() {
                     </div>
                 </div>
             </div>
-        </div>
+        </Backdrop>
     )
 }
