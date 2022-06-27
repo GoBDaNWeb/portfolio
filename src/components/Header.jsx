@@ -27,7 +27,7 @@ export default function Header() {
                 </NavLink>
                 <li 
                     onClick={() => ctx.handleModal()}
-                    className={`relative cursor-pointer text-yellow-500 before:transition-all before:bottom-[-5px] before:w-full before:absolute before:h-1 before:bg-yellow-500`}>
+                    className={`relative cursor-pointer text-yellow-300 before:transition-all before:bottom-[-5px] before:w-full before:absolute before:h-1 before:bg-yellow-300`}>
                     Контакты
                 </li>
             </ul>

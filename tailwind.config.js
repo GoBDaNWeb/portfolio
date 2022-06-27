@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '565px'
+      },
       fontFamily: {
         'sans': ['Inter'],
       },
@@ -15,6 +18,7 @@ module.exports = {
         'weather': "url('./assets/weather.jpg')",
         'kiwi': "url('./assets/kiwi.jpg')",
         'movies': "url('./assets/movies.jpg')",
+        'fullstack-blog': "url('./assets/fullstack-blog.jpg')",
       }
     },
   },

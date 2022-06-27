@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {FaReact, FaVuejs, FaCss3, FaSass, } from 'react-icons/fa'
+import {FaReact, FaNodeJs, FaVuejs, FaCss3, FaSass, } from 'react-icons/fa'
 import {SiNextdotjs, SiSupabase, SiFirebase, SiJavascript, SiTailwindcss, SiRedux, SiTypescript} from 'react-icons/si'
 import {FiCheck} from 'react-icons/fi'
 import {BsFillBootstrapFill} from 'react-icons/bs'
@@ -87,7 +87,7 @@ export default function Main() {
                             Приходилось работать с
                         </h5>
                         <div className='flex items-center justify-center flex-col gap-4'>  
-                            <ul className='flex flex-col gap-3 text-3xl'>
+                            <ul className='flex gap-3 text-3xl'>
                                 <li className='flex items-center gap-2'>
                                     <FaVuejs className='text-[#3FB27F]'/>
                                     <span className='text-xl'>Vue js</span>
@@ -105,6 +105,14 @@ export default function Main() {
                                             </span>
                                         </li>
                                     </ul>
+                                </li>
+                                <li  className='flex items-center gap-2'>
+                                    <FaNodeJs className='text-[#84BB00]'/>
+                                    <span className='text-xl'>Node js</span>
+                                </li>
+                                <li  className='flex items-center gap-2'>
+                                    <SiTypescript className='text-[#0174C1]'/>
+                                    <span className='text-xl'>TypeScript</span>
                                 </li>
                             </ul>
                             <hr className='h-[1px] w-full mt-2'/>
