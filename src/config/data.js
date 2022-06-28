@@ -1,4 +1,4 @@
-import {SiNextdotjs, SiRedux, SiSupabase, SiTailwindcss, SiFirebase} from 'react-icons/si'
+import {SiNextdotjs, SiRedux, SiSupabase, SiTailwindcss, SiFirebase, SiTypescript} from 'react-icons/si'
 import {FaReact, FaVuejs, FaNodeJs} from 'react-icons/fa'
 
 export const projects = [
@@ -58,6 +58,31 @@ export const projects = [
     },
     {
         id: '3',
+        img: 'pizza-delivery',
+        title: 'PizzaDelivery',
+        methods: [
+            {
+                title: 'React js',
+                icon: <FaReact className='text-[#5ED3F3]'/>,
+            },
+            {
+                title: 'TypeScript',
+                icon: <SiTypescript className='text-[#0174C1]'/>
+            },
+            {
+                title: 'Redux',
+                icon: <SiRedux className='text-[#6F45B1]'/> ,
+            },
+        ],
+        description: 'Crypto Tracker Приложение',
+        link_github_front: 'https://github.com/GoBDaNWeb/pizza-delivery',
+        link_github_back: '',
+        link_live_demo: 'https://pizza-delivery-ten.vercel.app/',
+        status: 1,
+        status_message: ''
+    },
+    {
+        id: '4',
         img: 'crypto',
         title: 'Crypto Hunter',
         methods: [
@@ -78,7 +103,7 @@ export const projects = [
         status_message: ''
     },
     {
-        id: '4',
+        id: '5',
         img: 'todosh',
         title: 'Todosh',
         methods: [
@@ -105,26 +130,6 @@ export const projects = [
         link_live_demo: 'https://todosh-app.vercel.app/',
         status: 2,
         status_message: 'в приложении будет меняться дизайн и добавляться новый функционал/адаптивность'
-    },
-    {
-        id: '5',
-        img: 'weather',
-        title: 'Weather',
-        methods: [
-            {
-                title: 'Next js',
-                icon:  <SiNextdotjs className='text-[#1C252C]'/>,
-            },
-            {
-                title: 'Tailwind',
-                icon: <SiTailwindcss className='text-[#35B3EB]'/>
-            }, 
-        ],
-        description: 'Приложение для просмотра прогноза погоды',
-        link_github_front: 'https://github.com/GoBDaNWeb/WeatherApp',
-        link_github_back: '',
-        link_live_demo: 'https://weather-app-phi-eight.vercel.app/',
-        status: 1
     },
     {
         id: '6',
