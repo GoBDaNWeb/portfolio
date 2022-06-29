@@ -6,7 +6,7 @@ export default function About() {
     const ctx = useContext(AppContext)
 
     return (
-        <div className='flex flex-col items-center justify-center w-full h-full lg:px-28 px-4'>
+        <div className='flex bg-zinc-800 flex-col items-center justify-center w-full pb-20 lg:px-28 px-4 pt-20'>
             <div className='flex flex-col lg:flex-row items-center '>
                 <img src={image} alt="123" />
                 <div className='flex flex-col items-start'>
