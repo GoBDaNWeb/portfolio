@@ -44,7 +44,7 @@ export default function MobileMenu() {
                                     VK
                                 </span>
                             </a>
-                            <a href='https://vk.com/bogduc' target='_blank' className='flex items-center p-2 gap-2 cursor-pointer hover:bg-zinc-800 transition rounded-2xl'>
+                            <a href='https://github.com/GoBDaNWeb' target='_blank' className='flex items-center p-2 gap-2 cursor-pointer hover:bg-zinc-800 transition rounded-2xl'>
                                 <SiGithub className='text-[#fff]'/>
                                 <span >
                                     GitHub
