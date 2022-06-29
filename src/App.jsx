@@ -28,7 +28,7 @@ function App() {
  
 	return (
 		<>
-			<div className="bg-zinc-800 min-h-screen text-white">
+			<div className="bg-zinc-800 h-screen text-white">
 				<MobileMenu/>
 				<Header/>
 				{
@@ -40,7 +40,7 @@ function App() {
 					{
 						transitions((props, item) => (
 							<animated.div  style={props}>
-								<div className='absolute top-0 bottom-0 left-0 right-0'>
+								<div className='flex items-start justify-center absolute top-0 bottom-0 left-0 right-0'>
 									<Routes location={item}>
 										<Route path={'/'} element={<Main/>}/>
 										<Route path={'/about'} element={<About/>}/>

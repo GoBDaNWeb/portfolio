@@ -7,7 +7,7 @@ export default function Main() {
     const ctx = useContext(AppContext)
 
     return (
-        <div className='flex bg-zinc-800 flex-col items-center justify-center w-full pb-20 lg:px-28 px-4 pt-20'>
+        <div className='flex bg-zinc-800 flex-col items-center justify-center w-full pb-20 lg:px-28 px-4 pt-60'>
             <div className='text-center'>
                 <h3 className='text-xl'>
                     Привет, Я <span 
