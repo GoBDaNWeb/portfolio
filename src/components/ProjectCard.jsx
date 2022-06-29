@@ -1,5 +1,5 @@
 import React from 'react'
-import {SiNextdotjs, SiSupabase, SiTailwindcss, SiRedux, SiGithub} from 'react-icons/si'
+import {SiGithub} from 'react-icons/si'
 import {CgMediaLive} from 'react-icons/cg'
 import {FaWrench} from 'react-icons/fa'
 

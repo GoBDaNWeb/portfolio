@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import {FaTelegramPlane, FaVk} from 'react-icons/fa'
 import AppContext from '../context/AppContext'
+import {SiGithub} from 'react-icons/si'
 import {AiFillPhone, AiFillMail, AiOutlineClose} from 'react-icons/ai'
 import Backdrop from './Backdrop'
 
@@ -32,6 +33,12 @@ export default function ContactsModal() {
                             <FaVk className='text-[#2787F5]'/>
                             <span className='text-xl'>
                                 VK
+                            </span>
+                        </a>
+                        <a href='https://github.com/GoBDaNWeb' target='_blank' className='flex items-center p-2 gap-2 cursor-pointer hover:bg-zinc-800 transition rounded-2xl'>
+                            <SiGithub className='text-[#fff]'/>
+                            <span className='text-xl'>
+                                GitHub
                             </span>
                         </a>
                     </div>
