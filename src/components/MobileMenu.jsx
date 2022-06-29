@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
 import {FaTelegramPlane, FaVk} from 'react-icons/fa'
 import {AiFillPhone, AiFillMail} from 'react-icons/ai'
+import {SiGithub} from 'react-icons/si'
 import AppContext from '../context/AppContext'
 
 export default function MobileMenu() {
@@ -41,6 +42,12 @@ export default function MobileMenu() {
                                 <FaVk className='text-[#2787F5]'/>
                                 <span >
                                     VK
+                                </span>
+                            </a>
+                            <a href='https://vk.com/bogduc' target='_blank' className='flex items-center p-2 gap-2 cursor-pointer hover:bg-zinc-800 transition rounded-2xl'>
+                                <SiGithub className='text-[#fff]'/>
+                                <span >
+                                    GitHub
                                 </span>
                             </a>
                         </div>
