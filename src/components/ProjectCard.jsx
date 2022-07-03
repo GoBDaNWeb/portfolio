@@ -122,7 +122,7 @@ export default function ProjectCard({project}) {
                 <div className={`bg-kiwi bg-center bg-no-repeat bg-cover w-full h-full`}></div> 
                 <div className={`bg-movies bg-center bg-no-repeat bg-cover w-full h-full`}></div> 
                 <div className={`bg-fullstack-blog bg-center bg-no-repeat bg-cover w-full h-full`}></div> 
-                <div className={`bg-pizza-delivery bg-center bg-no-repeat bg-cover w-full h-full`}></div> 
+                <div className={`bg-deshi-livery bg-center bg-no-repeat bg-cover w-full h-full`}></div> 
             </div>
         </div>
     )

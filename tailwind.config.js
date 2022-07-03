@@ -19,7 +19,7 @@ module.exports = {
         'kiwi': "url('./assets/kiwi.jpg')",
         'movies': "url('./assets/movies.jpg')",
         'fullstack-blog': "url('./assets/fullstack-blog.jpg')",
-        'pizza-delivery': "url('./assets/pizza-delivery.jpg')",
+        'deshi-livery': "url('./assets/dishe-livery.jpg')",
       }
     },
   },

@@ -62,8 +62,8 @@ export const projects = [
     },
     {
         id: '3',
-        img: 'pizza-delivery',
-        title: 'PizzaDelivery',
+        img: 'deshi-livery',
+        title: 'DisheLivery',
         methods: [
             {
                 title: 'React js',
@@ -78,10 +78,10 @@ export const projects = [
                 icon: <SiRedux className='text-[#6F45B1]'/> ,
             },
         ],
-        description: 'Crypto Tracker Приложение',
-        link_github_front: 'https://github.com/GoBDaNWeb/pizza-delivery',
+        description: 'Приложение для заказа еды',
+        link_github_front: 'https://github.com/GoBDaNWeb/deshi-livery',
         link_github_back: '',
-        link_live_demo: 'https://pizza-delivery-ten.vercel.app/',
+        link_live_demo: 'https://deshi-livery.vercel.app/',
         status: 1,
         status_message: ''
     },
