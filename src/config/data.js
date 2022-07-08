@@ -57,8 +57,8 @@ export const projects = [
         link_github_front: 'https://github.com/GoBDaNWeb/fullstack-blog-react-frontend',
         link_github_back: 'https://github.com/GoBDaNWeb/fullstack-blog-react-backend',
         link_live_demo: 'https://fullstack-blog-react-frontend.vercel.app/',
-        status: 3,
-        status_message: 'Для просмотра приложения сервер прийдется запускать локально'
+        status: 1,
+        status_message: ''
     },
     {
         id: '3',
