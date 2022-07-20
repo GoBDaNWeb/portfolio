@@ -12,6 +12,10 @@ export const projects = [
                 icon: <FaReact className='text-[#5ED3F3]'/>,
             },
             {
+                title: 'TypeScript',
+                icon: <SiTypescript className='text-[#0174C1]'/>
+            },
+            {
                 title: 'Redux',
                 icon: <SiRedux className='text-[#6F45B1]'/> ,
             },

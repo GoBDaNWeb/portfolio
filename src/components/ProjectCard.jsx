@@ -5,7 +5,7 @@ import {FaWrench} from 'react-icons/fa'
 
 export default function ProjectCard({project}) {
     return (
-        <div className='sm:w-[400px] w-[300px] bg-zinc-700 bg-opacity-50 rounded-2xl shadow-md '>
+        <div className='sm:w-[400px] w-[320px] bg-zinc-700 bg-opacity-50 rounded-2xl shadow-md '>
             <div className={`bg-${project.img} relative bg-cover w-full h-80 bg-center rounded-t-2xl group`}>
                 <div className={`absolute flex items-center justify-center w-10 h-10 border-4 border-solid z-40 border-zinc-800 rounded-full top-[-10px] right-[-10px] ${
                     project.status === 1 
@@ -39,7 +39,7 @@ export default function ProjectCard({project}) {
             </div>
             <div className='p-4 text-center'>
                 <h2 className='text-2xl font-semibold'>{project.title}</h2>
-                <ul className='flex flex-wrap items-center justify-evenly text-4xl mt-4'>
+                <ul className='flex flex-wrap items-center justify-evenly text-4xl gap-2 mt-4'>
                     {
                         project.methods.map(method => (
 
