@@ -4,6 +4,35 @@ import {FaReact, FaVuejs, FaNodeJs} from 'react-icons/fa'
 export const projects = [
     {
         id: '1',
+        img: 'gallery',
+        title: 'Pin Gallery',
+        methods: [
+            {
+                title: 'React js',
+                icon: <FaReact className='text-[#5ED3F3]'/>,
+            },
+            {
+                title: 'Redux',
+                icon: <SiRedux className='text-[#6F45B1]'/> ,
+            },
+            {
+                title: 'Node js',
+                icon: <FaNodeJs className='text-[#84BB00]'/>
+            }, 
+            {
+                title: 'Tailwind',
+                icon: <SiTailwindcss className='text-[#35B3EB]'/>,
+            }, 
+        ],
+        description: 'Fullstack приложение по типу pinterest',
+        link_github_front: 'https://github.com/GoBDaNWeb/fullstack-pin-gallery-frontend',
+        link_github_back: 'https://github.com/GoBDaNWeb/fullstack-pin-gallery-backend',
+        link_live_demo: 'https://fullstack-pin-gallery-frontend.vercel.app/',
+        status: 1,
+        status_message: ''
+    },
+    {
+        id: '2',
         img: 'intercourse',
         title: 'Intercourse',
         methods: [
@@ -32,7 +61,7 @@ export const projects = [
         status_message: ''
     },
     {
-        id: '2',
+        id: '3',
         img: 'fullstack-blog',
         title: 'BOGDAN BLOG',
         methods: [
@@ -61,7 +90,7 @@ export const projects = [
         status_message: ''
     },
     {
-        id: '3',
+        id: '4',
         img: 'deshi-livery',
         title: 'DisheLivery',
         methods: [
@@ -82,27 +111,6 @@ export const projects = [
         link_github_front: 'https://github.com/GoBDaNWeb/deshi-livery',
         link_github_back: '',
         link_live_demo: 'https://deshi-livery.vercel.app/',
-        status: 1,
-        status_message: ''
-    },
-    {
-        id: '4',
-        img: 'crypto',
-        title: 'Crypto Hunter',
-        methods: [
-            {
-                title: 'React js',
-                icon: <FaReact className='text-[#5ED3F3]'/>,
-            },
-            {
-                title: 'Tailwind',
-                icon: <SiTailwindcss className='text-[#35B3EB]'/>
-            }, 
-        ],
-        description: 'Crypto Tracker Приложение',
-        link_github_front: 'https://github.com/GoBDaNWeb/crypto-react-app',
-        link_github_back: '',
-        link_live_demo: 'https://crypto-react-app-eight.vercel.app/',
         status: 1,
         status_message: ''
     },

@@ -20,6 +20,7 @@ module.exports = {
         'movies': "url('./assets/movies.jpg')",
         'fullstack-blog': "url('./assets/fullstack-blog.jpg')",
         'deshi-livery': "url('./assets/dishe-livery.jpg')",
+        'gallery': "url('./assets/gallery.jpg')",
       }
     },
   },
