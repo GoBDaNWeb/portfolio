@@ -32,8 +32,8 @@ export const projects = [
         link_github_front: 'https://github.com/GoBDaNWeb/fullstack-pin-gallery-frontend',
         link_github_back: 'https://github.com/GoBDaNWeb/fullstack-pin-gallery-backend',
         link_live_demo: 'https://fullstack-pin-gallery-frontend.vercel.app/',
-        status: 1,
-        status_message: ''
+        status: 3,
+        status_message: 'Приложение может долго грузиться из-за бесплатного хостинга сервера'
     },
     {
         id: '2',
@@ -90,8 +90,8 @@ export const projects = [
         link_github_front: 'https://github.com/GoBDaNWeb/fullstack-blog-react-frontend',
         link_github_back: 'https://github.com/GoBDaNWeb/fullstack-blog-react-backend',
         link_live_demo: 'https://fullstack-blog-react-frontend.vercel.app/',
-        status: 1,
-        status_message: ''
+        status: 3,
+        status_message: 'Приложение может долго грузиться из-за бесплатного хостинга сервера'
     },
     {
         id: '4',
