@@ -33,6 +33,9 @@
 		padding: 1.25rem;
 		border-radius: 0.75rem;
 		}
+		@media screen and (max-width: 440px) {
+			width: 280px;
+		}
 
 		@media screen and (max-width: 300px) {
 		width: 100%;
