@@ -12,6 +12,9 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 // * styles
 import './Work.scss';
 
+// * components
+import Image from './Image/index'
+
 const Work = () => {
 	const [works, setWorks] = useState([]);
 
@@ -35,85 +38,7 @@ const Work = () => {
 			{
 				works.map((work, index) => (
 				<div className="portfolio-item app__flex" key={index}>
-					<div 
-						className="image app__flex"
-					>
-						<img 
-							src={work.image.url} 
-							alt={work.title} 
-						/>
-						<motion.div
-							whileHover={{ opacity: [0, 1] }}
-							transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-							className="hover app__flex"
-						>
-							<a 
-								href={work.liveLink} 
-								target="_blank" 
-								rel="noreferrer"
-							>
-
-								<motion.div
-									whileInView={{ scale: [0, 1] }}
-									whileHover={{ scale: [1, 0.90] }}
-									transition={{ duration: 0.25 }}
-									className="app__flex"
-								>
-									<AiFillEye />
-								</motion.div>
-							</a>
-							{
-								work.fullstack
-								? (
-									<>
-										<a 
-											href={work.frontLink} 
-											target="_blank" 
-											rel="noreferrer"
-										>
-											<motion.div
-												whileInView={{ scale: [0, 1] }}
-												whileHover={{ scale: [1, 0.90] }}
-												transition={{ duration: 0.25 }}
-												className="app__flex"
-											>
-												<AiFillGithub />
-											</motion.div>
-										</a>
-										<a 
-											href={work.backLink} 
-											target="_blank" 
-											rel="noreferrer"
-										>
-											<motion.div
-												whileInView={{ scale: [0, 1] }}
-												whileHover={{ scale: [1, 0.90] }}
-												transition={{ duration: 0.25 }}
-												className="app__flex"
-											>
-												<AiFillGithub />
-											</motion.div>
-										</a>
-									</>
-								) : (
-									<a 
-										href={work.frontLink} 
-										target="_blank" 
-										rel="noreferrer"
-									>
-										<motion.div
-											whileInView={{ scale: [0, 1] }}
-											whileHover={{ scale: [1, 0.90] }}
-											transition={{ duration: 0.25 }}
-											className="app__flex"
-										>
-											<AiFillGithub />
-										</motion.div>
-									</a>
-								)
-							}
-						</motion.div>
-					</div>
+					<Image work={work}/>
 					<div className="content app__flex">
 						<h4 className="bold-text">
 							{work.title}
