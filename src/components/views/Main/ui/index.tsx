@@ -3,6 +3,7 @@ import { Badge } from "../../../ui/Badge";
 import { Circle } from "../../../ui/Circle";
 import styles from "./styles.module.sass";
 import { images } from "../../../../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Main = () => {
   return (
@@ -41,7 +42,21 @@ const Main = () => {
           src={images.circle}
           alt="profile_circle"
         />
-        <motion.img
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
+          style={{ zIndex: "1000" }}
+        >
+          <LazyLoadImage
+            alt="profile"
+            effect="blur"
+            className={styles.profile}
+            src={images.profile}
+          />
+        </motion.div>
+
+        {/* <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           loading="eager"
@@ -49,7 +64,7 @@ const Main = () => {
           className={styles.profile}
           src={images.profile}
           alt="profile_circle"
-        />
+        /> */}
       </motion.div>
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
