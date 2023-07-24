@@ -35,6 +35,7 @@ const Main = () => {
         <motion.img
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
+          loading="eager"
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className={styles.circle}
           src={images.circle}
@@ -43,6 +44,7 @@ const Main = () => {
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          loading="eager"
           transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
           className={styles.profile}
           src={images.profile}
@@ -56,13 +58,13 @@ const Main = () => {
         className={styles.mainCircles}
       >
         <Circle>
-          <img src={images.react} alt="" />
+          <img src={images.react} alt="" loading="eager" />
         </Circle>
         <Circle width="150" height="150">
-          <img src={images.redux} alt="" />
+          <img src={images.redux} alt="" loading="eager" />
         </Circle>
         <Circle>
-          <img src={images.sass} alt="" />
+          <img src={images.sass} alt="" loading="eager" />
         </Circle>
       </motion.div>
     </section>
