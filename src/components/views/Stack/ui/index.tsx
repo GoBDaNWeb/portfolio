@@ -2,7 +2,7 @@ import { mainStack, secondStack } from "../data/stack";
 
 import styles from "./styles.module.sass";
 
-import { SkillItem } from "../../../common/SkillItem";
+import { SkillItem } from "@/components/common/SkillItem";
 import { motion } from "framer-motion";
 
 const Stack = () => {

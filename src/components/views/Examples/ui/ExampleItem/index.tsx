@@ -1,8 +1,10 @@
 import { FC } from "react";
+
 import { IExampleItemProps } from "../../types/exampleItem.interface";
 
 import styles from "./styles.module.sass";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import { LazyImage } from "@/components/common/LazyImage";
 
 const ExampleItem: FC<IExampleItemProps> = ({
   img,
@@ -15,9 +17,7 @@ const ExampleItem: FC<IExampleItemProps> = ({
   return (
     <div className={styles.exampleItem}>
       <a href={link} target="_blank">
-        <LazyLoadImage height="100%" alt={title} effect="blur" src={img} />
-
-        {/* <img src={img} alt="example" /> */}
+        <LazyImage src={img} fill alt={title} />
       </a>
 
       <div>
