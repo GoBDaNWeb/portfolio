@@ -70,6 +70,10 @@ const Experiences = () => {
       <h3>
         Стэк <span>&</span> Опыт
       </h3>
+      <h6>
+        *при наведении на компанию отобразится стек на котором я в ней работал
+      </h6>
+
       <motion.div
         className={styles.experiencesData}
         initial={{ opacity: 0 }}
