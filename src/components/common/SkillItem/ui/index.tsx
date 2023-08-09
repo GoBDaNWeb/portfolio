@@ -1,7 +1,7 @@
 import { FC } from "react";
-
 import { motion } from "framer-motion";
 import styles from "./styles.module.sass";
+import { LazyImage } from "../../LazyImage";
 
 const SkillItem: FC<any> = ({ skill }) => {
   return (
@@ -12,7 +12,7 @@ const SkillItem: FC<any> = ({ skill }) => {
       className={styles.skill}
     >
       <div style={{ background: skill.bg }} className={styles.skillCircle}>
-        <img src={skill.img} alt="" />
+        <LazyImage src={skill.img} height={45} width={45} alt="skill" />
       </div>
       <h6>{skill.title}</h6>
     </motion.div>

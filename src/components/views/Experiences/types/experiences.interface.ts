@@ -2,8 +2,8 @@ export interface ISkillsListProps {
   id: number;
   content: SkillsContent[];
 }
-type SkillsContent = {
-  img: any;
+export type SkillsContent = {
+  img: string;
   title: string;
   bg: string;
 };

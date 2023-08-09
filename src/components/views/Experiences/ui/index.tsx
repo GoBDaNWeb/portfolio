@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
-import { images } from "../../../../constants";
-import styles from "./styles.module.sass";
-import { ISkillsListProps } from "../types/experiences.interface";
-import { SkillItem } from "../../../common/SkillItem";
-import { skillsList } from "../data/skills";
 import { motion } from "framer-motion";
+
+import { ISkillsListProps } from "../types/experiences.interface";
+import { SkillsContent } from "../types/experiences.interface";
+import { skillsList } from "../data/skills";
+
+import { images } from "@/constants";
+
+import styles from "./styles.module.sass";
+
+import { SkillItem } from "@/components/common/SkillItem";
+import { LazyImage } from "@/components/common/LazyImage";
+
 const experiencesList = [
   {
     year: (
@@ -13,7 +20,7 @@ const experiencesList = [
       </h5>
     ),
     title: "Only",
-    logo: images.only,
+    logo: images.only.src,
   },
   {
     year: (
@@ -22,7 +29,7 @@ const experiencesList = [
       </h5>
     ),
     title: "Стартап",
-    logo: images.startup,
+    logo: images.startup.src,
   },
   {
     year: (
@@ -31,7 +38,7 @@ const experiencesList = [
       </h5>
     ),
     title: "Фриланс",
-    logo: images.freelance,
+    logo: images.freelance.src,
   },
   {
     year: (
@@ -40,7 +47,7 @@ const experiencesList = [
       </h5>
     ),
     title: "Технополюс",
-    logo: images.techno,
+    logo: images.techno.src,
   },
   {
     year: (
@@ -49,7 +56,7 @@ const experiencesList = [
       </h5>
     ),
     title: "its.agency",
-    logo: images.agency,
+    logo: images.agency.src,
   },
 ];
 
@@ -60,6 +67,7 @@ const Experiences = () => {
   useEffect(() => {
     skillsList.forEach((skills: ISkillsListProps) => {
       if (skills.id === currentExperience) {
+        //@ts-ignore
         setCurrentSkills(skills.content);
       }
     });
@@ -93,7 +101,13 @@ const Experiences = () => {
               key={item.title}
               className={styles.experience}
             >
-              <img src={item.logo} alt={item.title} />
+              <LazyImage
+                src={item.logo}
+                // fill
+                width={50}
+                height={50}
+                alt={item.title}
+              />
               <div className={styles.experienceContent}>
                 <h4
                   className={currentExperience === index ? `activeTitle` : ""}

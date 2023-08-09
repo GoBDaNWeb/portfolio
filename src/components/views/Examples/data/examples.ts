@@ -1,10 +1,10 @@
-import images from "constants/images";
+import { images } from "@/constants";
 
 export const examplesList = [
   {
     id: 0,
     link: "https://kino-view.vercel.app/",
-    img: images.kino,
+    img: images.kino.src,
     title: "KinoView",
     stack: ["NextJs", "React", "TypeScript", "Sass"],
     front: "https://github.com/GoBDaNWeb/KinoView2.0",
@@ -12,7 +12,7 @@ export const examplesList = [
   {
     id: 1,
     link: "https://pin-gallery.vercel.app/",
-    img: images.gallery,
+    img: images.gallery.src,
     title: "Pin Gallery",
     stack: [
       "NextJs",

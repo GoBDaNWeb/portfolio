@@ -1,4 +1,4 @@
-import { examplesList } from "./../../data/examples";
+import { examplesList } from "../../data/examples";
 
 import styles from "./styles.module.sass";
 
