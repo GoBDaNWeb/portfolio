@@ -52,7 +52,7 @@ const experiencesList = [
   {
     year: (
       <h5>
-        Октябрь <span>2022</span> - Июнь <span>2023</span>
+        Ноябрь <span>2022</span> - Июнь <span>2023</span>
       </h5>
     ),
     title: "its.agency",
