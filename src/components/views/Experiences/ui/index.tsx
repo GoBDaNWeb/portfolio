@@ -43,7 +43,7 @@ const experiencesList = [
   {
     year: (
       <h5>
-        Август <span>2022</span> - Декабрь <span>2022</span>
+        Июль <span>2022</span> - Ноябрь <span>2022</span>
       </h5>
     ),
     title: "Технополюс",
@@ -52,7 +52,7 @@ const experiencesList = [
   {
     year: (
       <h5>
-        Октябрь <span>2022</span> - Май <span>2023</span>
+        Октябрь <span>2022</span> - Июнь <span>2023</span>
       </h5>
     ),
     title: "its.agency",
